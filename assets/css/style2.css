@@ -1,0 +1,366 @@
+body {
+  font-family: Myriad Pro; }
+
+.center {
+  width: 1170px;
+  margin: auto; }
+
+.pullLeft {
+  float: left; }
+
+.pullRight {
+  float: right; }
+
+.top {
+  background-color: #f7941d;
+  font-size: 13px;
+  width: 48px;
+  height: 16px;
+  color: white;
+  margin: auto;
+  margin-top: 100px; }
+
+.bottom {
+  font-size: 25px;
+  font-weight: bold; }
+
+#info {
+  height: 39px;
+  background: #1f2629; }
+  #info p {
+    color: #7b8990;
+    padding-top: 13px;
+    padding-right: 15px; }
+    #info p span {
+      color: #bac7cd; }
+
+#menu {
+  height: 81px; }
+  #menu img {
+    margin-top: 24px; }
+  #menu ul {
+    margin-right: 21px; }
+  #menu li {
+    display: inline-block;
+    font-size: 14.5px;
+    padding-top: 35px;
+    color: #bac7cd;
+    padding-right: 39px; }
+  #menu li:last-child {
+    padding-right: 0; }
+  #menu li:first-child {
+    color: #23282f; }
+
+#main {
+  height: 750px;
+  text-align: center; }
+  #main p {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    position: relative; }
+  #main p:nth-child(2) {
+    font-size: 60px;
+    font-weight: bold; }
+  #main .tikla {
+    width: 141px;
+    height: 51px;
+    background-color: #29c2e1;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    margin-top: -20px;
+    position: relative; }
+  #main .btnGroup button {
+    padding: 10px 20px;
+    border: none;
+    background: gray;
+    text-transform: uppercase;
+    color: white;
+    position: relative; }
+  #main .btnGroup button:first-child {
+    float: left; }
+  #main .btnGroup button:last-child {
+    float: right; }
+  #main .btnGroup {
+    margin-top: 10px; }
+  #main .frame {
+    width: 100%;
+    overflow: hidden; }
+  #main .frame img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 845px; }
+
+.form {
+  position: relative;
+  height: 90px;
+  background-color: #404143;
+  top: -20px;
+  border-radius: 3px; }
+
+.line {
+  height: 34px;
+  border-left: 4px solid #f7941d;
+  margin-top: 28px; }
+
+.els {
+  margin-top: 150px; }
+
+#about {
+  height: 595px;
+  text-align: center; }
+  #about .text {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 42px;
+    margin-left: 52px;
+    color: #8d8d8d; }
+  #about .image {
+    width: 475px;
+    height: 308px;
+    background: #8d8d8d;
+    margin-top: 10px; }
+  #about button {
+    margin-left: 68px;
+    margin-top: 56px;
+    border: none;
+    background-color: #f7941d;
+    color: white;
+    width: 125px;
+    height: 43px;
+    border-radius: 3px; }
+
+#services {
+  height: 547px;
+  background: #e5eef0;
+  text-align: center; }
+  #services i {
+    width: 68px;
+    height: 67px; }
+
+#clients {
+  height: 616px;
+  background: #f7941d;
+  text-align: center; }
+  #clients .top {
+    background: #23282f;
+    color: white; }
+  #clients i {
+    color: white;
+    width: 45px;
+    height: 45px;
+    padding-top: 15px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin-bottom: 28px; }
+  #clients .h5one {
+    margin-top: 44px; }
+  #clients .h5two {
+    margin-bottom: 25px; }
+  #clients .petek {
+    float: left;
+    margin-left: 161px; }
+
+.pricing {
+  height: 713px auto;
+  color: black;
+  padding-top: 72px; }
+  .pricing .boxes .qutu {
+    margin-bottom: 99px;
+    position: relative;
+    padding: 0;
+    margin-top: 30px;
+    height: 422px;
+    border: 1.3px solid #E5EEF0; }
+    .pricing .boxes .qutu .clientmanagement {
+      padding-bottom: 48px; }
+    .pricing .boxes .qutu span {
+      border-bottom: 1px solid #f7941d;
+      padding-bottom: 6px; }
+    .pricing .boxes .qutu h5 {
+      padding: 10px 0px 15px 0px;
+      font-size: 19px; }
+    .pricing .boxes .qutu p {
+      font-size: 15px; }
+      .pricing .boxes .qutu p:last-child {
+        color: white; }
+    .pricing .boxes .qutu img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100; }
+    .pricing .boxes .qutu .startnow {
+      background-color: #29C2E1;
+      border-radius: 50px 50px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      padding: 8px 0px 0.1px 0px;
+      width: 141px;
+      margin: 0 auto; }
+    .pricing .boxes .qutu:last-child {
+      margin-right: 0; }
+    .pricing .boxes .qutu h5 {
+      border-bottom: 1px solid #E5EEF0;
+      z-index: 100; }
+    .pricing .boxes .qutu h3 {
+      z-index: 2;
+      border-bottom: 1px solid #E5EEF0;
+      padding-bottom: 7px;
+      font-size: 20px;
+      font-weight: bold; }
+    .pricing .boxes .qutu:hover {
+      box-shadow: 0px 0px 20px #888888; }
+
+#team {
+  height: 714px;
+  background: #e5eef0;
+  text-align: center; }
+  #team .team {
+    height: 398px;
+    margin-top: 54px;
+    text-align: left; }
+    #team .team .container {
+      background: white; }
+      #team .team .container .img {
+        width: 263px;
+        height: 276px;
+        background-color: #8d8d8d;
+        margin-left: -15px; }
+      #team .team .container p:nth-child(2) {
+        font-size: 14px;
+        margin-top: 29px;
+        margin-left: 15px; }
+      #team .team .container p:nth-child(3) {
+        font-size: 14px;
+        margin-left: 15px;
+        color: #f7941d; }
+      #team .team .container i {
+        margin-left: 15px;
+        margin-bottom: 32px;
+        color: #adbdc1; }
+    #team .team .container:hover {
+      background-color: #29c2e1; }
+      #team .team .container:hover p {
+        color: black; }
+      #team .team .container:hover i {
+        color: white; }
+
+#blogpost {
+  height: 939px;
+  text-align: center; }
+  #blogpost .sekil {
+    height: 395px;
+    background-color: #8d8d8d; }
+    #blogpost .sekil .date {
+      width: 83px;
+      height: 83px;
+      background-color: #29c2e1;
+      color: white; }
+      #blogpost .sekil .date b {
+        font-size: 36px;
+        display: block; }
+      #blogpost .sekil .date p {
+        padding-top: 10px;
+        display: block; }
+  #blogpost .text {
+    text-align: left; }
+    #blogpost .text h2 {
+      margin-top: 40px;
+      margin-bottom: 46px; }
+    #blogpost .text span {
+      border-bottom: 3px solid #f7941d; }
+    #blogpost .text button {
+      width: 141px;
+      height: 46px;
+      background-color: #f7941d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 51px; }
+
+#contact {
+  height: 304px;
+  border-top: 1px solid #e5eef0;
+  background-color: #1f2629; }
+  #contact .center img {
+    margin-left: 15px;
+    margin-top: 76px; }
+  #contact .menyu, #contact .contact, #contact .newsletter {
+    display: inline-block; }
+  #contact .menyu {
+    margin-left: 157px;
+    width: 280px;
+    color: white; }
+    #contact .menyu ul {
+      display: inline-block; }
+    #contact .menyu ul:first-child {
+      margin-left: -22px;
+      margin-top: 75px; }
+      #contact .menyu ul:first-child p {
+        font-size: 18px; }
+    #contact .menyu li {
+      list-style-type: none;
+      text-transform: uppercase;
+      color: #93a1a7;
+      margin-top: 25px; }
+      #contact .menyu li i:nth-child(2), #contact .menyu li i:last-child {
+        padding-left: 18px; }
+    #contact .menyu ul:last-child {
+      margin-left: 80px; }
+  #contact .contact {
+    margin-left: 109px;
+    width: 229px;
+    color: white; }
+    #contact .contact p:first-child {
+      font-size: 18px;
+      margin-top: 75px; }
+    #contact .contact p:nth-child(2), #contact .contact p:nth-child(4), #contact .contact p:last-child {
+      margin-top: 25px;
+      text-transform: uppercase; }
+      #contact .contact p:nth-child(2) span, #contact .contact p:nth-child(4) span, #contact .contact p:last-child span {
+        color: #93a1a7; }
+    #contact .contact p:nth-child(3) {
+      margin-top: 25px;
+      color: #93a1a7;
+      text-transform: uppercase; }
+  #contact .newsletter {
+    margin-left: 63px;
+    width: 262px;
+    color: white; }
+    #contact .newsletter p:first-child {
+      font-size: 18px;
+      margin-top: 75px; }
+    #contact .newsletter p:nth-child(2) {
+      margin-top: 25px;
+      color: #93a1a7;
+      text-transform: uppercase; }
+    #contact .newsletter .inputt {
+      width: 219px;
+      height: 40px;
+      border: 1px solid #93a1a7;
+      margin-top: -6px;
+      display: inline-block;
+      background-color: transparent; }
+    #contact .newsletter .buton {
+      width: 42px;
+      height: 42px;
+      background-color: #f7941d;
+      border: none;
+      color: white; }
+
+#footer {
+  height: 102px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1F2629; }
+  #footer p {
+    color: #93a1a7;
+    line-height: 78px;
+    border-top: 2px solid #2C3438; }
+
+/*# sourceMappingURL=style2.css.map */

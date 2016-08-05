@@ -1,0 +1,493 @@
+@import 'colors';
+body{
+	font-family:Myriad Pro;
+}
+// common classes
+.center{
+	width:1170px;
+	margin:auto;
+}
+.pullLeft{
+	float:left;
+}
+.pullRight{
+	float:right;
+}
+.top{
+	background-color:$orange;
+	font-size: 13px;
+	width: 48px;
+	height: 16px;
+	color:white;
+	margin:auto;
+	margin-top: 100px;
+}
+.bottom{
+	font-size: 25px;
+	font-weight: bold;
+}
+// ---------------INFO---------------
+#info{
+	height:39px;
+	background:$darkblue;
+	p{
+		color:#7b8990;
+		padding-top:13px;
+		padding-right:15px;
+		span{
+			color:#bac7cd;
+		}
+	}
+}
+// ---------------MENU---------------
+#menu{
+	height:81px;
+	img{
+		margin-top: 24px;
+	}
+	ul{
+		margin-right:21px;
+	}
+		li{
+			display: inline-block;
+			font-size: 14.5px;
+			padding-top: 35px;
+			color:#bac7cd;
+			padding-right:39px;
+		}
+		li:last-child{
+			padding-right:0;
+		}
+		li:first-child{
+			color:#23282f;
+		}
+}
+// ---------------HEADER---------------
+#main{
+	height:750px;
+	
+	text-align:center;
+	p{
+		font-size:24px;
+		color:white;
+		text-transform: uppercase;
+		position:relative;
+	
+
+	}
+	// // p:first-child{
+		
+	// // 	position:relative;
+	// }
+	p:nth-child(2){
+		font-size:60px;
+		font-weight: bold;
+
+	}
+	.tikla{
+		width: 141px;
+		height: 51px;
+		background-color:#29c2e1;
+		border:none;
+		border-radius:3px;
+		color:white;
+		font-weight: bold;
+		margin-top: -20px;
+		position:relative;
+	}
+
+	.btnGroup button{
+			padding:10px 20px;
+			border:none;
+			background:gray;
+			text-transform: uppercase;
+			color:white;
+			position:relative;
+		}
+		.btnGroup button:first-child{
+			float:left;
+		}
+		.btnGroup button:last-child{
+			float:right;
+		}
+		.btnGroup{
+			margin-top:10px;
+		}
+		.frame{
+			width:100%;
+			
+			overflow: hidden;
+
+		}
+		.frame img{
+			position:absolute;
+			right: 0;
+			width:100%;
+			object-fit: cover;
+            height: 845px;
+
+            
+
+
+
+		}
+}
+.form{
+
+		position:relative;
+		height: 90px;
+		background-color:#404143;
+		top: -20px;
+
+		border-radius:3px;
+	}
+	.line{
+		
+		height: 34px;
+		border-left:4px solid $orange;
+		margin-top: 28px;
+	}
+	.els{
+		margin-top: 150px;
+	}
+// ---------------ABOUT---------------
+#about{
+	height:595px;
+	text-align:center;
+
+	.text{
+		font-size: 14px;
+		text-align:left;
+		margin-top: 42px;
+		margin-left: 52px;
+		color:$gray;
+	}
+	.image{
+		width: 475px;
+		height: 308px;
+		background:$gray;
+		margin-top:10px;
+	}
+	button{
+		margin-left:68px;
+		margin-top: 56px;
+		border:none;
+		background-color:$orange;
+		color:white;
+		width: 125px;
+		height: 43px;
+		border-radius:3px;
+	}
+}
+// ---------------SERVICES---------------
+#services{
+	height:547px;
+	background:$lightgray;
+	text-align:center;
+	i{
+		width: 68px;
+		height: 67px;
+
+	}
+}
+// ---------------CLIENTS---------------
+#clients{
+	height:616px;
+	background:$orange;
+	text-align:center;
+	.top{
+		background:#23282f;
+		color:white;
+	}
+	i{
+		color:white;
+		width: 45px;
+		height: 45px;
+		padding-top:15px;
+		border-radius:100%;
+		border:1px solid white;
+		margin-bottom: 28px;
+	}
+	.h5one{
+		margin-top: 44px;
+	}
+    .h5two{
+    	margin-bottom: 25px;
+    }
+	.petek{
+		float: left;
+		 margin-left: 161px;
+
+
+	}
+}
+// ---------------PRICE---------------
+.pricing{
+	height:713px auto;
+	color:black;
+	padding-top:72px;
+	.boxes{
+
+		.qutu{
+			margin-bottom: 99px;
+			position:relative;
+			padding:0;
+			margin-top: 30px;
+			.clientmanagement{
+				padding-bottom: 48px;
+			}
+			span{
+				border-bottom:1px solid $orange;
+				padding-bottom:6px;
+			}
+			h5{
+				padding:10px 0px 15px 0px;
+				font-size: 19px;
+				// color: $font-color;
+			}
+			p{
+				// color:$font-color;
+				font-size: 15px;
+				&:last-child {
+					color:white;
+				}
+			}
+			img{
+					position:absolute;
+					top:0;
+					left: 0;
+					z-index: 100;
+				}
+			&:nth-child(2){
+				
+				
+			}
+			.startnow{
+				background-color:#29C2E1;
+				border-radius:50px 50px;
+				text-align: center;
+				font-size: 15px;
+				color: white;
+				padding: 8px 0px 0.1px 0px;
+				width: 141px;
+				margin: 0 auto;
+			}
+			height: 422px;
+			border:1.3px solid #E5EEF0;
+			
+			&:last-child{
+				margin-right: 0;
+			}
+			h5{
+				border-bottom:1px solid #E5EEF0;
+				z-index: 100;
+			}
+			h3{z-index:2;
+				border-bottom:1px solid #E5EEF0;
+				padding-bottom:7px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			&:hover{
+				box-shadow:0px 0px 20px #888888;
+			}
+		}
+	}
+}
+// ---------------TEAM---------------
+#team{
+	height:714px;
+	background:$lightgray;
+	text-align:center;
+	.team{
+		height: 398px;
+		margin-top: 54px;
+		text-align:left;
+		.container{
+			background:white;
+				.img{
+					width: 263px;
+					height: 276px;
+					background-color:$gray;
+					margin-left: -15px;
+				}
+				p:nth-child(2){
+					font-size:14px;
+					margin-top:29px;
+					margin-left: 15px;
+				}
+				p:nth-child(3){
+					font-size:14px;
+					margin-left: 15px;
+					color:$orange;
+				}
+				i{
+					margin-left: 15px;
+					margin-bottom: 32px;
+					color:#adbdc1;
+				}
+		}
+		
+		.container:hover{
+			background-color: $blue;
+			p{
+				color:black;
+			}
+			i{
+				color:white;
+			}
+		}
+	}
+}
+// ---------------BLOG POST---------------
+#blogpost{
+	height:939px;
+	text-align:center;
+	.sekil{
+		height: 395px;
+		background-color:$gray;
+		.date{
+			width: 83px;
+			height: 83px;
+			background-color:$blue;
+			color:white;
+			b{
+				font-size:36px;
+				display: block;
+			}
+			p{
+				padding-top: 10px;
+				display: block;
+			}
+		}
+
+	}
+	.text{
+			text-align:left;
+			h2{
+				margin-top: 40px;
+				margin-bottom:46px;
+			}
+				span{
+				border-bottom:3px solid $orange;
+				
+				}
+			button{
+				width: 141px;
+				height: 46px;
+				background-color:$orange;
+				color:white;
+				border:none;
+				border-radius:5px;
+				margin-top: 51px;
+			}
+		}
+}
+// ---------------FOOTER---------------
+#contact{
+	height:304px;
+	border-top:1px solid $lightgray;
+	background-color:$darkblue;
+
+	.center img{
+		margin-left: 15px;
+		margin-top:76px;
+	}
+	 .menyu,.contact,.newsletter{
+		display: inline-block;
+	}
+	.menyu{
+			margin-left: 157px;
+			width: 280px;
+			color:white;
+			ul{
+				display: inline-block;
+			}
+			ul:first-child{
+				margin-left: -22px;
+				margin-top: 75px;
+				p{
+					font-size:18px;
+				}
+			}
+			li{
+					list-style-type: none;
+					text-transform: uppercase;
+					color:#93a1a7;
+					margin-top: 25px;
+					i:nth-child(2),i:last-child{
+						padding-left:18px;
+					}
+				}
+			ul:last-child{
+				margin-left: 80px;
+			}	
+		}
+	.contact{
+			margin-left: 109px;
+			width: 229px;
+			color:white;
+			p:first-child{
+				font-size:18px;
+				margin-top: 75px;
+			}
+			p:nth-child(2),p:nth-child(4),p:last-child{
+				margin-top: 25px;
+				text-transform: uppercase;
+				span{
+					color:#93a1a7;
+				}
+			}
+			p:nth-child(3){
+				margin-top: 25px;
+				color:#93a1a7;
+				text-transform: uppercase;
+			}
+		}
+	.newsletter{
+			margin-left: 63px;
+			width: 262px;
+			color:white;
+			p:first-child{
+				font-size:18px;
+				margin-top: 75px;
+			}
+			p:nth-child(2){
+				margin-top: 25px;
+				color:#93a1a7;
+				text-transform: uppercase;
+			}
+			.inputt{
+				width: 219px;
+				height: 40px;
+				border:1px solid #93a1a7;
+				margin-top:-6px;
+				display: inline-block;
+				background-color:transparent;
+			}
+			.buton{
+				width: 42px;
+				height: 42px;
+				background-color:$orange;
+				border:none;
+				color:white;
+			}
+	}
+}
+// ------------FOOTER------------
+#footer{
+	height:102px;
+	text-align:center;
+	text-transform:uppercase;
+	background-color:#1F2629;
+
+	p{
+		
+		color:#93a1a7;
+		line-height: 78px;
+
+		border-top:2px solid #2C3438;
+
+	}
+
+}

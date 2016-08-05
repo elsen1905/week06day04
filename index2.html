@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+<!-- <div class="container-fluid"> -->
+	
+		<section id="info" class="col-md-12">
+		<div class="row">
+			<div class="row center">
+				<p class="pullRight"><span>Call Us </span>: 9855 445 4444</p>
+			</div>
+		</div>
+		</section>
+	
+		<section id="menu" class="col-md-12">
+			<div class="row center">
+			<img src="image/logo.png" object-fit="cover">
+				<ul class="pullRight">
+					<li>HOME</li>
+					<li>ABOUT US</li>
+					<li>NEWS</li>
+					<li>PORTFOLIO</li>
+					<li>SERVICE</li>
+					<li>BLOG</li>
+					<li>PAGES <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+					<li>CONTACT US</li>
+				</ul>
+			</div>
+		</section>
+		<section id="main" class="col-md-12">
+			<div class="row center">
+			<div class="frame">
+			<img src="images/01.jpg">
+			</div>
+			   <div class="els">
+				<p>Boost up your</p>
+				<p>local business</p>
+				</div>
+				<button class="tikla">CONTACT US</button>
+				<div class="btnGroup">	
+						<button onclick="prev()">Prev</button>
+						<button onclick="next()">Next</button>
+				</div>
+			
+			</div>
+			<script type="text/javascript">
+
+			imageArr=["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg"];
+			descArr=["images 01","images 02","images 03","images 04","images 05"];
+			desc1Arr=["baki","gence","tokyo","istanbul","mohtesem"];
+
+
+			imgSource=document.getElementsByClassName("frame")[0].getElementsByTagName('img')[0];
+			descSource=document.getElementsByClassName('els')[0].getElementsByTagName("p")[0];
+			desc1Source=document.getElementsByClassName('els')[0].getElementsByTagName("p")[1];
+			
+			descSource.innerHTML=descArr[0];
+			
+			imgSource.src=imageArr[0];
+			desc1Source.innerHTML=desc1Arr[0];
+
+			var count=0;
+
+			function prev(){
+
+				
+				count--;
+				if(count<0){
+					count=imageArr.length-1;
+				}
+				imgSource.src=imageArr[count];
+				descSource.innerHTML=descArr[count];
+				desc1Source.innerHTML=desc1Arr[count];
+				
+
+			}
+
+			function next(){
+				
+				count++;
+				if(count==imageArr.length){
+					count=0;
+				}
+				imgSource.src=imageArr[count];
+				 descSource.innerHTML=descArr[count];
+				 desc1Source.innerHTML=desc1Arr[count];
+				
+				
+			}
+			setInterval(next,1000);
+
+
+
+
+
+		</script>
+		</section>
+		<div class="container">
+	               <div class="col-md-12 form">
+					  <div class="row">
+						<div class="line"></div>
+					  </div>
+				   </div>
+		</div>
+		<section id="about" class="col-md-12">
+
+			<div class="row center">
+				<p class="top">WHAT</p>
+				<p class="bottom">WE ARE?</p>
+				<div class="image col-md-6"></div>
+				<p class=" col-md-offset-3 col-md-6 text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+				<button class="pullLeft">READ MORE</button>
+			</div>	
+		</section>
+		<section id="services" class="col-md-12">
+			<div class="row center">
+				<p class="top">OUR</p>
+				<p class="bottom">SERVICES</p>
+				<i class="fa fa-book"></i>
+			</div>
+		</section>
+		<section id="clients" class="col-md-12">
+			<div class="row center">
+				<p class="top">HOME</p>
+				<p class="bottom">CLIENTS</p>
+				<div class="row"><i class="fa fa-quote-left   " aria-hidden="true"></i></div>
+			<div class="row col-md-6 col-md-offset-3">
+				<p class="textSlide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+               specimen book. It has survived not only five centuries.</p>
+               <h5 class="h5one ">BY</h5>
+               <h5 class="h5two TextSlide1">SUNITHA DANIAL</h5>
+               <div class="row col-md-5 petek" >
+               	<img src="images/1.png" alt="">
+               	<img src="images/1.png" alt="">
+               	<img src="images/1.png" alt="">
+               	<img src="images/1.png" alt="">
+               	<img src="images/1.png" alt="">
+               </div>
+            </div>
+			</div>
+			  <script type="text/javascript">
+      textArr = ["It is a long established fact that a reader will be                      distracted by the readable content of a page when looking at its    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock."];
+
+      textArrH5 = ["RAMGOPALAVARMA","VENKITTARAMAN","MADHAVIKUTTI"];
+      Ptext = document.getElementsByClassName("textSlide")[0];
+      H5text = document.getElementsByClassName("TextSlide1")[0];
+         Ptext.innerHTML = textArr[0];
+         H5text.innerHTML = textArrH5[0];
+
+            count = 0;
+            var AutoMove=setInterval(AutoSilde,5000);
+            function AutoSilde(){
+               count++
+               if(count==textArr.length){
+                  count=0
+               }
+               Ptext.innerHTML = textArr[count];
+               H5text.innerHTML = textArrH5[count];
+            }
+      </script>
+		</section>
+		<div class="container pricing">
+		<div class="row">
+			<div><h1><strong>PRICING</strong></h1>
+			<h4>SOME OF OUR FEATURES</h4></div>
+			<div class="boxes">
+				<div class="text-center col-md-3 col-sm-6 col-xs-6 col-lg-3">
+					<div class="qutu text-center">
+					<h3><span>PER</span>SONAL</h3><h5>From $100 per month</h5><p>Business Support</p><p>Business Analyzing</p><p>24 hour support</p>
+					<div class="startnow"><a href="#"><p>START NOW</p></a></div></div>
+				</div>
+				<div class="text-center  col-md-3 col-sm-6 col-xs-6 col-lg-3">
+					<div class="qutu text-center">
+					
+					<h3><span>BUS</span>INESS</h3><h5>From $200 per month</h5><p>Business Support</p><p>Business Analysing</p><p>24 hour support</p><p>Client management</p>
+					<div class="startnow"><a href="#"><p>START NOW</p></a></div>
+					<img src="images/Untitled-11.png"></div>
+				</div>
+				<div class="text-center  col-md-3 col-sm-6 col-xs-6 col-lg-3">
+					<div class="qutu text-center">
+					<h3><span>GOL</span>D</h3><h5>From $250 per month</h5><p>24 hour support</p><p>Client management</p><p>Keeping business data</p>
+					<div class="startnow"><a href="#"><p>START NOW</p></a></div></div>
+				</div>
+				<div class="text-center  col-md-3 col-sm-6 col-xs-6 col-lg-3">
+					<div class="qutu text-center">
+					<h3><span>ULTI</span>MATE</h3><h5>From $300 per month</h5><p>24 hour support</p><p>Client management</p><p>Keeping business data</p><p>Better communication</p>
+					<div class="startnow"><a href="#"><p>START NOW</p></a></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<section id="team" class="col-md-12">
+			<div class="row center">
+				<p class="top">OUR</p>
+				<p class="bottom">TEAM</p>
+				<div class="col-md-3 team">
+					<div class="container col-md-12">
+						<div class="img"></div>
+						<p>MR. RAMGOPALAVARMA</p>
+						<p>Data Specialist</p>
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google"></i>
+					</div>
+				</div>
+				<div class="col-md-3 team">
+					<div class="container col-md-12">
+						<div class="img"></div>
+						<p>MADHAVIKUTTI MENON</p>
+						<p>Client Support</p>
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google"></i>
+					</div>
+				</div>
+				<div class="col-md-3 team">
+					<div class="container col-md-12">
+						<div class="img"></div>
+						<p>Dr.Venkittaraman</p>
+						<p>Client Management</p>
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google"></i>
+					</div>
+				</div>
+				<div class="col-md-3 team">
+					<div class="container col-md-12">
+						<div class="img"></div>
+						<p>George Danial</p>
+						<p>Communication</p>
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="blogpost" class="col-md-12">
+			<div class="row center">
+				<p class="top">OUR</p>
+				<p class="bottom">BLOG POST</p>
+				<div class="container">
+					<div class="sekil">
+						<div class="date">
+							<p><b>15</b>JULY</p>
+						</div>
+					</div>
+				</div>
+				<div class="text col-md-12">
+					<h2><span>Blo</span>g Heading Here</h2>
+
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not <br> only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+
+					<button>READ MORE</button>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="col-md-12 col-xs-12">
+			<div class="row center">
+				<img src="image/logo.png" class="pullLeft">
+				<div class="menyu pullLeft">
+					<div class="row">
+						<ul>
+							<p>Menu</p>
+							<li>home</li>
+							<li>about us</li>
+							<li>features</li>
+							<li>portfolio</li>
+						</ul>
+						<ul>
+							<li>service</li>
+							<li>blog</li>
+							<li>blog pages</li>
+							<li><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contact pullLeft col-xs-12">
+					<div class="row">
+						<p>Contact</p>
+						<p>Address :<span> Geethanjali street</span></p>
+						<p>Second flor : 88569</p>
+						<p>Phone :<span> +988 9956 222</span></p>
+						<p>email :<span> info@business.com</span></p>
+					</div>
+				</div>
+				<div class="newsletter pullLeft col-xs-12">
+					<div class="row">
+						<p>Newsletter</p>
+						<p>Sign up your newsletter</p>
+						<input type="text" class="inputt"><button type="button" class="buton">GO</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="footer" class="container col-md-12" >
+			<div class="row center">
+				<p>© 2015 business Ltd. allright reserved</p>
+			</div>
+		</section>
+	
+</div>
+</body>
+</html>
